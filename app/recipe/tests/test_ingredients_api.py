@@ -32,7 +32,7 @@ class PublicIngredientsApiTests(TestCase):
     def setUp(self):
         self.client = APIClient()
 
-    def test_auth_requrired(self):
+    def test_auth_required(self):
         """Test auth is required for retrieving ingredients."""
         res = self.client.get(INGREDIENTS_URL)
 
@@ -40,7 +40,7 @@ class PublicIngredientsApiTests(TestCase):
 
 
 class PrivateIngredientsApiTests(TestCase):
-    """Test unathenticated API requests."""
+    """Test athenticated API requests."""
 
     def setUp(self):
         self.user = create_user()
