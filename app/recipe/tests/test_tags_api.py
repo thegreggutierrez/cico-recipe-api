@@ -120,7 +120,7 @@ class PrivateTagsApiTests(TestCase):
         self.assertNotIn(s2.data, res.data)
 
     def test_filtered_tags_unique(self):
-        """Test filtered tags returns a unique lsit."""
+        """Test filtered tags returns a unique list."""
         tag = Tag.objects.create(user=self.user, name='Breakfast')
         Tag.objects.create(user=self.user, name='Dinner')
         recipe1 = Recipe.objects.create(
@@ -130,7 +130,7 @@ class PrivateTagsApiTests(TestCase):
             user=self.user,
         )
         recipe2 = Recipe.objects.create(
-            title = 'Porridge',
+            title='Porridge',
             time_minutes=3,
             price=Decimal('2.00'),
             user=self.user,
