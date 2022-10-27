@@ -1,2 +1,2 @@
-# cico-recipe-api
-CICO Recipe API project.
+# recipe-app-api
+Recipe API project.
